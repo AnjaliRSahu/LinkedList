@@ -11,6 +11,11 @@ namespace LinkedListPracticeProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Linked List Program");
+            CustomLinkedList customLinkedList=new CustomLinkedList();
+            customLinkedList.Add(56);
+            customLinkedList.Add(30);
+            customLinkedList.Add(70);
+
             Console.ReadLine();
         }
     }
