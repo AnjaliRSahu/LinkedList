@@ -83,6 +83,29 @@ namespace LinkedListPracticeProblem
             this.head=this.head.next;
             return deletenode;
         }
+        //delete last element from the linked list
+        public int DeleteLast()
+        {
+            Node newNode = this.head;
+            if (this.head == null)
+            {
+                Console.WriteLine("Linked list is empty");
+                return 0;
+            }
+            if (this.head.next == null)
+            {
+                this.head = null;
+                Console.WriteLine("Only one element " +this.head.data);
+                return 0;
+            }
+            while (newNode.next.next != null)
+            { 
+                newNode=newNode.next;
+            }
+            int deleteLastNode = newNode.next.data;
+            newNode.next = null;
+            return deleteLastNode;
+        }
 
 
         
