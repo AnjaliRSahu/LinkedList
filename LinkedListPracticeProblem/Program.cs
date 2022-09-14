@@ -22,9 +22,12 @@ namespace LinkedListPracticeProblem
             //Console.WriteLine("{0} is the deleted node ",customLinkedList.DeleteFirst());
             //customLinkedList.Display();
 
-            Console.WriteLine("{0} is the last deleted node ",customLinkedList.DeleteLast());
-            Console.WriteLine();
-            customLinkedList.Display();
+            //Console.WriteLine("{0} is the last deleted node ",customLinkedList.DeleteLast());
+            //Console.WriteLine();
+            //customLinkedList.Display();
+
+            Console.WriteLine(customLinkedList.Search(30));
+
 
             Console.ReadLine();
         }

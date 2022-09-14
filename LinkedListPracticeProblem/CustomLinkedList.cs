@@ -106,10 +106,28 @@ namespace LinkedListPracticeProblem
             newNode.next = null;
             return deleteLastNode;
         }
+        //Search node
+        public int Search(int value)
+        { 
+            Node  temp=this.head;
+            
+                while (temp != null)
+                {
+                    if (temp.data == value)
+                    {
+                    //Console.WriteLine("{0} is present in the list ", value);
+                    return value;
+                    }
+                    temp = temp.next;
+                }
+            return 0;
+        }
 
 
-        
-        
+
+
+
+
 
     }
 }
