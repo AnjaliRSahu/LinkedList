@@ -18,6 +18,9 @@ namespace LinkedListPracticeProblem
 
             customLinkedList.InsertBetween(30, 2);
             customLinkedList.Display();
+            Console.WriteLine();
+            Console.WriteLine("{0} is the deleted node ",customLinkedList.DeleteFirst());
+            customLinkedList.Display();
             Console.ReadLine();
         }
     }

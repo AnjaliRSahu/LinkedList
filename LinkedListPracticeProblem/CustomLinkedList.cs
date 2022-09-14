@@ -71,6 +71,19 @@ namespace LinkedListPracticeProblem
             }
             
         }
+        //delete first element from the linked list
+        public int DeleteFirst()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Linked List is empty");
+                return 0;
+            }
+            int deletenode = this.head.data;
+            this.head=this.head.next;
+            return deletenode;
+        }
+
 
         
         
